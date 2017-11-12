@@ -1,0 +1,16 @@
+//cd into project directory
+yarn init
+
+//add dependencies
+yarn add babel-preset-react@6.24.1
+yarn add babel-preset-env@1.5.2
+
+//output source file to file in scripts folder
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+//or
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
+//start server
+live-server public/
+
